@@ -9,7 +9,7 @@ Our cooking helper chatbot is like having a cooking buddy by your side. It's per
 - Openai api
 
 ## App UI
-<img src="https://github.com/AbdulHadi806/cooking-assistant-chatbot/assets/113926529/16e1c91b-15ec-4802-8e47-a66c8c8f9ec4" alt="App UI" width="300">
+<img src="https://github.com/AbdulHadi806/Chatbot-Cooking-Assistant/assets/113926529/5e5314aa-f8f5-4570-8e28-84a0e1f2a53a" alt="image" style="width: 300px;">
 
 ## About Me:
 
