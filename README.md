@@ -5,6 +5,7 @@ Our cooking helper chatbot is like having a cooking buddy by your side. It's per
 
 ## Technologies Used
 - React Native
+- Typescript
 - Openai api
 
 ## App UI
