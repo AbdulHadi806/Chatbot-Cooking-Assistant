@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { View, TextInput, StyleSheet, Text } from 'react-native';
-import Icon from 'react-native-vector-icons/EvilIcons';
-import Mic from 'react-native-vector-icons/FontAwesome';
-
+import AntDesign from 'react-native-vector-icons/AntDesign';
 import { chat } from '../../Types/chatTypes';
 import CustomBtn from '../Common/CustomBtn';
+import AudioRecord from './AudioRecord';
+
 const PromptForm = ({ chat, setChat }: chat) => {
     const [inputText, setInputText] = useState<string>('');
     const [buttonHandler, setButtonHandler] = useState<number>(0)
@@ -77,15 +77,11 @@ const PromptForm = ({ chat, setChat }: chat) => {
                 placeholderTextColor="#000"
                 placeholder="Ask the AI..."
             />
+            <AudioRecord />
             <CustomBtn 
                 onPress={handleCopyState}
                 propStyle={styles.searchBtn}
-                icon={<Mic name="microphone" size={30} color="#000" />}
-             />
-            <CustomBtn 
-                onPress={handleCopyState}
-                propStyle={styles.searchBtn}
-                icon={<Icon name="search" size={30} color="#000" />}
+                icon={<AntDesign name="search1" size={30} color="#000" />}
              />
         </View>
     );
@@ -119,6 +115,11 @@ const styles = StyleSheet.create({
     searchBtn: {
         position: 'absolute',
         right: 20,
-        bottom: 20
-    }
+        bottom: 21
+    },
+    recordBtn: {
+      position: 'absolute',
+      right: 60,
+      bottom: 16
+  }
 });

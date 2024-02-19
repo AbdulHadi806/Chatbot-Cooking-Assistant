@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native';
 import { chatType } from '../../Types/chatTypes';
-import Icon from 'react-native-vector-icons/Entypo';
+import Entypo from 'react-native-vector-icons/Entypo';
 import CustomBtn from '../Common/CustomBtn';
 
 interface HeaderProps {
@@ -18,7 +18,7 @@ const Header = ({setChat}: HeaderProps) => {
             
             <CustomBtn 
                 onPress={chatResetHander}
-                icon={<Icon name="cycle" size={24} color="#fff" />}
+                icon={<Entypo name="cycle" size={24} color="#fff" />}
 
              />
         </View>
